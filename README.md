@@ -16,7 +16,8 @@ Clone the repo and run tests locally:
 ```bash
 git clone git@github.com:avaeris/Arcedas.git
 cd Arcedas
-python -m pip install -r requirements.txt
+# Install in editable mode so the package is available to tests
+python -m pip install -e .
 python -m pytest -q
 ```
 
