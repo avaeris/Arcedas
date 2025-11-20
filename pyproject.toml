@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcedas"
+version = "0.1.0"
+description = "Small utilities for Arcedas"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = [
+  "pytest"
+]
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
