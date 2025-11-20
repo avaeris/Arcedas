@@ -9,6 +9,17 @@ helpers, tests, and CI to bootstrap development.
 - Pytest-based tests
 - GitHub Actions CI for running tests
 
+## Additional Helpers
+
+This project includes a few additional string helper utilities in
+`arcedas.utils`:
+
+- `truncate(text, max_length)`: Safely shorten long text and append an ellipsis when truncated.
+- `normalize_whitespace(text)`: Collapse multiple spaces, tabs, and newlines into single spaces and strip leading/trailing whitespace.
+- `to_title_case(text)`: Convert text into human-friendly title case while normalizing whitespace.
+
+These helpers are small, well-tested, and useful across text-processing tasks.
+
 ## Getting started
 
 Clone the repo and run tests locally:
